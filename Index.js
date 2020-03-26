@@ -17,7 +17,7 @@ app.use('/api',cors(corsOptions), routes)
 app.get('/', (req, res) =>  res.send('Welcome to FitnessAPI'))
     
 
-const server = app.listen(process.env.PORT || 8000, () => {
+const server = app.listen(process.env.PORT || 8080, () => {
     console.log(`http://localhost:${server.address().port}`)
 })
 
